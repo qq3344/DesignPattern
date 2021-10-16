@@ -1,0 +1,16 @@
+package adaptor.clazz;
+
+/**
+ * 适配者类的接口
+ */
+public class SDCardImpl implements SDCard{
+    @Override
+    public String readSD() {
+        return "SD卡读取数据";
+    }
+
+    @Override
+    public void writeSD(String data) {
+        System.out.println("SD写数据：" + data);
+    }
+}
